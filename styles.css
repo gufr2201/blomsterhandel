@@ -1,17 +1,38 @@
-/* Error: expected "{".
- *   ,
- * 1 | background-color: $body-background;
- *   |                                   ^
- *   '
- *   styles.scss 1:35  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a   \2577 \a 1 \2502  background-color: $body-background;\a   \2502                                    ^\a   \2575 \a   styles.scss 1:35  root stylesheet';
+body {
+  background-color: rgba(111, 242, 104, 0.596);
 }
+body h1 {
+  text-align: center;
+  font-size: xxx-large;
+  color: rgb(212, 148, 65);
+  font-family: "Rubik Bubbles", cursive;
+}
+body .sidenav {
+  height: 100%;
+  width: 150px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(9, 125, 3);
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+body .sidenav a {
+  padding: 6px 6px 6px 6px;
+  text-decoration: none;
+  font-size: large;
+  color: azure;
+  display: block;
+}
+body .sidenav a:hover {
+  color: rgb(0, 4, 4);
+}
+body .photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=styles.css.map */

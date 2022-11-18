@@ -1,0 +1,49 @@
+$body-color: rgba(111, 242, 104, 0.596);
+$photo-width: 200px;
+$photo-height: 200px;
+
+
+body {
+    background-color: $body-color;
+
+
+    h1 {
+        text-align: center;
+        font-size: xxx-large;
+        color: rgb(212, 148, 65);
+        font-family: 'Rubik Bubbles', cursive;
+
+        }
+        .sidenav {
+            height: 100%;
+            width: 150px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(9, 125, 3);
+            overflow-x: hidden;
+            padding-top: 20px;
+
+            a {
+                // margin-top: 20px;
+                padding: 6px 6px 6px 6px;
+                text-decoration: none;
+                font-size: large;
+                color: azure;
+                display: block;
+
+                &:hover {
+                    color: rgb(0, 4, 4);
+                }
+            }
+        }
+
+
+.photo {
+    width: $photo-width;
+    height: $photo-height;
+    border-radius: $photo-width/20;
+    object-fit: cover;
+}
+}
