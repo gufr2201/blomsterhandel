@@ -1,3 +1,6 @@
+# skriv in nedan
+sass --watch styles.scss styles.css
+
 # blomsterhandel
 
 # Att göra

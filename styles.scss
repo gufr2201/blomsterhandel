@@ -1,16 +1,30 @@
-$body-color: rgba(111, 242, 104, 0.596);
-$photo-width: 200px;
-$photo-height: 200px;
+@import "helpers/variables";
+
+@mixin panel {
+    display:flex;
+    margin:2rem;
+    flex-direction: column;
+    width:fit-content;
+    padding:24px;
+
+}
+
 
 
 body {
     background-color: $body-color;
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw;
+    padding: 0;
+    margin: 0;
+    
 
 
     h1 {
         text-align: center;
         font-size: xxx-large;
-        color: rgb(212, 148, 65);
+        color: $h1-color;
         font-family: 'Rubik Bubbles', cursive;
 
         }
@@ -39,11 +53,262 @@ body {
             }
         }
 
+    .photo1{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+       
+    }
+main {
+    margin-left: 150px;
+    }
 
+    // Start
+    .jumbotron {
+        display: flex;
+        flex-wrap: wrap;
+        gap:10px;
+        flex-direction:row;
+        position: relative;
+    }
+.panel {
+    @include panel();
+    width: fit-content;
+    margin-left: 150px;
+    // background-color:$body-color;
+    border-radius:6px;
+
+&-title {
+    font-size:1.2rem;
+}
+
+&-featured {
+    max-width:1200px;
+    
+    & .panel-title {
+        font-size:1.5rem;
+        color:white;
+    }
+}
+    & .hero {
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      width: 600px;
+      height: auto;
+    }
+
+}
+
+    .flowers {
+        display: flex;
+        flex-wrap: wrap;
+        gap:10px;
+        flex-direction:row;
+        margin-top:40px;
+    }
+
+    @mixin card {
+        border:2px solid rgba(0,0,0,0);
+        display:flex;
+        margin:1rem;
+        flex-direction: column;
+        width:fit-content;
+    
+       &:hover {
+        background-color:$card-bg-color;
+        border:2px solid black;
+        transition: 600ms;
+        
+        & .card-title {
+            color:$hover-text-color;
+            transition: 600ms;
+            border-bottom: 1px solid transparent;
+            border-color: $hover-text-color;
+            display: inline-block;
+        }
+    
+        & img {
+            opacity: 1;
+        }
+              
+    }
+    }
+    li {
+        margin-left: -30px;
+        
+    } 
+    // Card elements.
+.card {
+    @include card();
+    width: fit-content;
+    max-width:  500px;
+    border-radius:6px;
+
+&-title {
+    font-size:1.2rem;
+    margin-left:4px;
+}
+
+&-image {
+    max-height:300px;
+    height:300px;
+    background-color:white;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+
+    & img {
+        width:300px;
+       
+    }
+}
+
+    &-list {
+        list-style: none;
+
+    &-text {
+    margin-left:-20px;
+    }
+}
+
+
+&-price {
+    font-family: bold;
+    margin-left:4px;
+}
+
+&-btn {
+    background-color:$danger-color;
+    color:white;
+    margin-bottom:20px;
+    margin-left:4px;
+    width:40%;
+    border-radius:6px;
+    padding:4px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+&-btn-info {
+    background-color:$primary-color;
+    color:white;
+    margin-top:6px;
+    margin-bottom:8px;
+    margin-left:4px;
+    width:40%;
+    border-radius:6px;
+    padding:4px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+&-tag {
+    width:60%;
+    transform:translate(0,-6px);
+    height:20px;
+    display: flex;
+    align-items: center;
+    margin-left: -14px;
+  
+
+
+     & .bg-primary {
+        background-color:$primary-color;
+     }
+
+     & .bg-danger {
+        background-color:$danger-color;
+     }
+
+     & .bg-success {
+         background-color:$success-color;
+     }
+
+     & .bg-default {
+         background-color:$default-color;
+     }
+
+     & .bg-pink {
+      background-color: $pink-color;
+     }
+}
+
+&-tag-text {
+    border-radius:5px;
+    padding:4px;
+    color:white;
+    text-align:center;
+    margin-left:1.2rem;
+    width:60%;
+    border-style: solid;
+    border-color: black;
+
+}
+
+&-bg-danger
+{
+    background-color:$primary-color;
+}
+
+&-featured {
+    max-width:1200px;
+    
+    
+    & .card-title {
+        font-size:1.5rem;
+        color:white;
+    }
+}
+
+}
+
+    // Avslut
+.container {
+    max-width: $grid__bp-md * 1px;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+
+        &--fluid {
+            margin: 0;
+            max-width: 100%;
+        }
+        &__row {
+            display:flex;
+            flex-wrap: wrap;
+        width: 100%;
+        }
+
+        .list {
+            width: auto;
+            height: auto;
+            background-color: rgba(153, 255, 147, 0.596);
+            margin: 10px;
+            
+
+            .category1 {
+                background-color: brown;
+                border-radius: 10px;
+                border-style: none;
+            }
+        }
+}
 .photo {
     width: $photo-width;
     height: $photo-height;
     border-radius: $photo-width/20;
     object-fit: cover;
+
+
 }
+}
+footer {
+    background-color: rgb(32, 29, 29);
 }

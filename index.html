@@ -11,73 +11,114 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap" rel="stylesheet">
 </head>
+
 <body>
    <header>
-    <h1>🌵Gustavs Blomsterhandel🌻</h1>
     <nav class="sidenav">
         <a href="about.html" title="Läs mer om Gustavs Blomsterhandel">Om oss</a>
         <a href="alla-produkter.html" title="Här kan du se alla våra produkter">Alla produkter</a>
+        <a href="form.html" title="Här kan du sälja dina växter">Sälj dina växter</a>
+        <a href="test.html">test</a>
     </nav>
 </header>
+
 <main>
-    <img class="photo1" src="./images/vika-strawberrika-qnW-j8qaO8k-unsplash.jpg" width="400px" alt="Photo by: Vika Strawberrika on Unsplash">
-<ul class="list cactus">
-    <img class="photo cactus-photo" src="./images/mathias-reding-WPZlpwJx0Lk-unsplash.jpg" alt="Photo by Mathias Reding on Unsplash">
-    <li>Kaktusar</li> <!--Namn-->
-    <li>Cactaceae</li><!--Släkte-->
-    <li>Stickig men fin växt.</li><!--Kort beskrivning-->
-    <li>Kaktusväxter</li><!--Kategori-->
-    <li class="more-info">Mer information</li><!--Mer info-->
-    <li><button>Köp</button></li><!--Länk-->
-</ul>
-   
-    <ul class="list rose">
-        <img class="photo rose-photo" src="./images/bence-balla-schottner-ehGgVnHc-1Q-unsplash.jpg" alt="Photo by Bence Balla-Schottner on Unsplash">
-        <li>En bukett rosor</li> <!--Namn-->
-        <li>Rosa</li><!--Släkte-->
-        <li>14 röda rosor</li><!--Kort beskrivning-->
-        <li>Snittblommor</li><!--Kategori-->
-        <li class="more-info">Mer information</li><!--Mer info-->
-        <li><button>Köp</button></li><!--Länk-->
-</ul>
+  <section class="jumbotron">
+    <article class="panel panel-featured">
+      <h1>🌵Gustavs Blomsterhandel🌻</h1>
+      <img class="hero" src="./images/roman-kraft-_oH66az_yug-unsplash.jpg" width="400px" alt="Photo by Roman Kraft on Unsplash">  
+    </article>
+   </section>
+<div class="container">
+  <section class="flowers">
+    <div class="card card">
+        <div class="card-image">
+          <img src="./images/mathias-reding-WPZlpwJx0Lk-unsplash.jpg" alt="Photo by Mathias Reding on Unsplash">
+        </div>
+       <h4 class="card-title">Kaktusar - Cactaceae</h4> <!--Namn-->
+       <ul class="card-list">
+        <li class="card-text">Stickig men fin växt</li><!--Kort beskrivning-->
+        <li class="card-text">100sek</li>
+        <li><button class="card-btn-info">Mer information</button></li><!--Mer info-->
+        <li><button class="card-btn">Köp</button></li><!--Länk-->
+        <li><span class="card-tag"><p class="card-tag-text bg-primary">Suckulent</p></span></li><!--Kategori-->
+        </ul>
+    </div>
+    <div class="card card">
+        <div class="card-image">
+          <img src="./images/lukasz-rawa-hkSInYvOLtQ-unsplash.jpg" alt="Photo by Łukasz Rawa on Unsplash">
+        </div>
+       <h4 class="card-title">Tulpaner - Tulipa</h4> <!--Namn-->
+       <!-- <ul class="card-text"> -->
+        <p class="card-text">En bukett med 6 rosa tulpaner</p><!--Kort beskrivning-->
+        <small class="card-price">100sek</small>
+        <button class="card-btn-info">Mer information</button><!--Mer info-->
+        <button class="card-btn">Köp</button><!--Länk-->
+        <span class="card-tag"><p class="card-tag-text bg-pink">Snittblommor</p></span><!--Kategori-->
+    </div>
+    <div class="card card">
+      <div class="card-image">
+        <img src="./images/bence-balla-schottner-ehGgVnHc-1Q-unsplash.jpg" alt="Photo by Bence Balla-Schottner on Unsplash">
+      </div>
+       <h4 class="card-title">En bukett rosor</h4> <!--Namn-->
+       <ul class="card-text">
+        <li class="li card-text">Rosa</li><!--Släkte-->
+        <li class="li card-text">14 röda rosor</li><!--Kort beskrivning-->
+        <li class="li card-btn-info">Mer information</li><!--Mer info-->
+        <li class="li"><button class="card-btn">Köp</button></li><!--Länk-->
+        <li class="li card-tag"><p class="card-tag-text bg-pink">Snittblommor</p></li><!--Kategori-->
+        </ul>
+</div>
+  </section>
+<div>
 <ul class="list monstera">
     <img class="photo monstera-photo" src="./images/feey-bwsTJMnhcwE-unsplash.jpg" alt="Photo by feey on Unsplash">
     <li>Monstera</li> <!--Namn-->
     <li>Monstera deliciosa</li><!--Släkte-->
     <li>Växt som har hål i blandem</li><!--Kort beskrivning-->
-    <li>Gröna växter</li><!--Kategori-->
+    <li class="category3"><button>Gröna växter</button></li><!--Kategori-->
     <li class="more-info">Mer information</li><!--Mer info-->
     <li><button>Köp</button></li><!--Länk-->
 </ul>
-<ul class="">
-    <img class="photo " src="" alt="">
-    <li></li> <!--Namn-->
-    <li></li><!--Släkte-->
-    <li></li><!--Kort beskrivning-->
-    <li></li><!--Kategori-->
+</div>
+<div>
+  <ul class="">
+    <img class="photo succulent-photo" src="./images/stephanie-harvey-T0inbt7nRME-unsplash.jpg" alt="Photo by Stephanie Harvey on Unsplash">
+    <li>Aloe Vera</li> <!--Namn-->
+    <li>Succulent</li><!--Släkte-->
+    <li>Vackra blad i skiftande färger</li><!--Kort beskrivning-->
+    <li class="category">Suckulent</li><!--Kategori-->
     <li></li><!--Mer info-->
     <li><button>Köp</button></li><!--Länk-->
-</ul>
-    <ul class="">
-    <img class="photo " src="" alt="">
-    <li></li> <!--Namn-->
-    <li></li><!--Släkte-->
+  </ul>
+</div>
+<div>
+   <ul class="">
+    <img class="photo " src="./images/feey-17UXXzGF7RA-unsplash.jpg" alt="Photo by feey on Unsplash">
+    <li>Fikus</li> <!--Namn-->
+    <li>Ficus</li><!--Släkte-->
     <li></li><!--Kort beskrivning-->
-    <li></li><!--Kategori-->
+    <li class="category"></li><!--Kategori-->
     <li></li><!--Mer info-->
     <li><button>Köp</button></li><!--Länk-->
-    </ul>
-
+  </ul>
+</div>
+<div>
     <ul class="">
       <img class="photo " src="" alt="">
         <li></li> <!--Namn-->
          <li></li><!--Släkte-->
         <li></li><!--Kort beskrivning-->
-        <li></li><!--Kategori-->
-        <li></li><!--Mer info-->
+    <li class="category"></li><!--Kategori-->
+            <li></li><!--Mer info-->
         <li><button>Köp</button></li><!--Länk-->
         </ul>
-    </main>
-    <footer></footer>
+    </div>
+ </div>
+</main>
+    <footer>
+        <p></p>
+    </footer>
 </body>
+
 </html>

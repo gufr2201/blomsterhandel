@@ -1,5 +1,10 @@
 body {
   background-color: rgba(111, 242, 104, 0.596);
+  display: flex;
+  min-height: 100vh;
+  min-width: 100vw;
+  padding: 0;
+  margin: 0;
 }
 body h1 {
   text-align: center;
@@ -28,11 +33,212 @@ body .sidenav a {
 body .sidenav a:hover {
   color: rgb(0, 4, 4);
 }
+body .photo1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+body main {
+  margin-left: 150px;
+}
+body .jumbotron {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex-direction: row;
+  position: relative;
+}
+body .panel {
+  display: flex;
+  margin: 2rem;
+  flex-direction: column;
+  width: fit-content;
+  padding: 24px;
+  width: fit-content;
+  margin-left: 150px;
+  border-radius: 6px;
+}
+body .panel-title {
+  font-size: 1.2rem;
+}
+body .panel-featured {
+  max-width: 1200px;
+}
+body .panel-featured .panel-title {
+  font-size: 1.5rem;
+  color: white;
+}
+body .panel .hero {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  height: auto;
+}
+body .flowers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex-direction: row;
+  margin-top: 40px;
+}
+body li {
+  margin-left: -30px;
+}
+body .card {
+  border: 2px solid rgba(0, 0, 0, 0);
+  display: flex;
+  margin: 1rem;
+  flex-direction: column;
+  width: fit-content;
+  width: fit-content;
+  max-width: 500px;
+  border-radius: 6px;
+}
+body .card:hover {
+  background-color: #c8cfd5;
+  border: 2px solid black;
+  transition: 600ms;
+}
+body .card:hover .card-title {
+  color: rgb(255, 43, 43);
+  transition: 600ms;
+  border-bottom: 1px solid transparent;
+  border-color: rgb(255, 43, 43);
+  display: inline-block;
+}
+body .card:hover img {
+  opacity: 1;
+}
+body .card-title {
+  font-size: 1.2rem;
+  margin-left: 4px;
+}
+body .card-image {
+  max-height: 300px;
+  height: 300px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+body .card-image img {
+  width: 300px;
+}
+body .card-list {
+  list-style: none;
+}
+body .card-list-text {
+  margin-left: -20px;
+}
+body .card-price {
+  font-family: bold;
+  margin-left: 4px;
+}
+body .card-btn {
+  background-color: #d9534f;
+  color: white;
+  margin-bottom: 20px;
+  margin-left: 4px;
+  width: 40%;
+  border-radius: 6px;
+  padding: 4px;
+}
+body .card-btn:hover {
+  cursor: pointer;
+}
+body .card-btn-info {
+  background-color: rgb(20, 115, 198);
+  color: white;
+  margin-top: 6px;
+  margin-bottom: 8px;
+  margin-left: 4px;
+  width: 40%;
+  border-radius: 6px;
+  padding: 4px;
+}
+body .card-btn-info:hover {
+  cursor: pointer;
+}
+body .card-tag {
+  width: 60%;
+  transform: translate(0, -6px);
+  height: 20px;
+  display: flex;
+  align-items: center;
+  margin-left: -14px;
+}
+body .card-tag .bg-primary {
+  background-color: rgb(20, 115, 198);
+}
+body .card-tag .bg-danger {
+  background-color: #d9534f;
+}
+body .card-tag .bg-success {
+  background-color: #28a745;
+}
+body .card-tag .bg-default {
+  background-color: #6c757d;
+}
+body .card-tag .bg-pink {
+  background-color: #ffa39f;
+}
+body .card-tag-text {
+  border-radius: 5px;
+  padding: 4px;
+  color: white;
+  text-align: center;
+  margin-left: 1.2rem;
+  width: 60%;
+  border-style: solid;
+  border-color: black;
+}
+body .card-bg-danger {
+  background-color: rgb(20, 115, 198);
+}
+body .card-featured {
+  max-width: 1200px;
+}
+body .card-featured .card-title {
+  font-size: 1.5rem;
+  color: white;
+}
+body .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+body .container--fluid {
+  margin: 0;
+  max-width: 100%;
+}
+body .container__row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+body .container .list {
+  width: auto;
+  height: auto;
+  background-color: rgba(153, 255, 147, 0.596);
+  margin: 10px;
+}
+body .container .list .category1 {
+  background-color: brown;
+  border-radius: 10px;
+  border-style: none;
+}
 body .photo {
   width: 200px;
   height: 200px;
   border-radius: 10px;
   object-fit: cover;
+}
+
+footer {
+  background-color: rgb(32, 29, 29);
 }
 
 /*# sourceMappingURL=styles.css.map */
