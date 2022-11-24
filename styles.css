@@ -5,10 +5,29 @@ body {
   min-width: 100vw;
   padding: 0;
   margin: 0;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body .main-class {
+  width: 100vw;
 }
 body h1 {
   text-align: center;
   font-size: xxx-large;
+  color: rgb(212, 148, 65);
+  font-family: "Rubik Bubbles", cursive;
+}
+body h1 .headers {
+  display: flex;
+  margin: 2rem;
+  flex-direction: column;
+  width: fit-content;
+  padding: 24px;
+  width: fit-content;
+  margin-left: 0px;
+  border-radius: 6px;
+}
+body h2 {
   color: rgb(212, 148, 65);
   font-family: "Rubik Bubbles", cursive;
 }
@@ -58,6 +77,7 @@ body .panel {
   width: fit-content;
   margin-left: 150px;
   border-radius: 6px;
+  width: 100vw;
 }
 body .panel-title {
   font-size: 1.2rem;
@@ -82,6 +102,7 @@ body .flowers {
   gap: 10px;
   flex-direction: row;
   margin-top: 40px;
+  margin-left: 150px;
 }
 body li {
   margin-left: -30px;
@@ -128,6 +149,7 @@ body .card-image img {
 }
 body .card-list {
   list-style: none;
+  margin-left: -8px;
 }
 body .card-list-text {
   margin-left: -20px;
@@ -147,9 +169,15 @@ body .card-btn {
 }
 body .card-btn:hover {
   cursor: pointer;
+  background-color: #6c757d;
+  color: #fff;
+}
+body .card-btn:active {
+  background-color: #fff;
+  color: #000;
 }
 body .card-btn-info {
-  background-color: rgb(20, 115, 198);
+  background-color: rgb(212, 148, 65);
   color: white;
   margin-top: 6px;
   margin-bottom: 8px;
@@ -160,11 +188,17 @@ body .card-btn-info {
 }
 body .card-btn-info:hover {
   cursor: pointer;
+  background-color: #6c757d;
+  color: #fff;
+}
+body .card-btn-info:active {
+  background-color: #fff;
+  color: #000;
 }
 body .card-tag {
   width: 60%;
   transform: translate(0, -6px);
-  height: 20px;
+  height: 18px;
   display: flex;
   align-items: center;
   margin-left: -14px;
@@ -184,6 +218,9 @@ body .card-tag .bg-default {
 body .card-tag .bg-pink {
   background-color: #ffa39f;
 }
+body .card-tag .bg-warning {
+  background-color: rgb(255, 208, 36);
+}
 body .card-tag-text {
   border-radius: 5px;
   padding: 4px;
@@ -191,8 +228,16 @@ body .card-tag-text {
   text-align: center;
   margin-left: 1.2rem;
   width: 60%;
-  border-style: solid;
-  border-color: black;
+  border: #000 solid 2px;
+}
+body .card-tag-text:hover {
+  cursor: pointer;
+  background-color: #6c757d;
+  color: #fff;
+}
+body .card-tag-text:active {
+  background-color: #fff;
+  color: #000;
 }
 body .card-bg-danger {
   background-color: rgb(20, 115, 198);
@@ -205,7 +250,7 @@ body .card-featured .card-title {
   color: white;
 }
 body .container {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 10px;
   box-sizing: border-box;
@@ -230,15 +275,116 @@ body .container .list .category1 {
   border-radius: 10px;
   border-style: none;
 }
-body .photo {
+body .product-page {
+  width: 100vw;
+}
+body .product-page .succulent-section {
+  padding-left: 5rem;
+}
+body .product-page small {
+  padding-left: 15px;
+}
+body .product-page strong {
+  width: 10%;
+}
+body .product-page .succulent-image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  padding-left: 5rem;
+  transition: 0.2s;
+}
+body .product-page .succulent-image:hover {
+  transform: scale(1.1);
+  cursor: help;
+}
+body .form-section {
+  margin-left: 200px;
+}
+body .form-section .paragraph-form {
+  margin-left: 20px;
+}
+body .form-class {
+  max-width: 650px;
+  padding: 20px 12px 10px 20px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body .form-class .form-class-heading {
+  font-size: 22px;
+  font-weight: bold;
+  font-style: italic;
+  border-bottom: 2px solid #000;
+  margin-bottom: 20px;
+  padding-bottom: 3px;
+}
+body .form-class label {
+  display: block;
+  margin: 0px 0px 15px 0px;
+}
+body .form-class label span {
+  width: 160px;
+  font-weight: bold;
+  float: left;
+  padding-top: 8px;
+  padding-right: 5px;
+}
+body .form-class input.input-field, body .form-class .select-field {
+  width: 48%;
+}
+body .form-class input.input-field, body .form-class .textarea-field, body .form-class .select-field {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border: 1px solid #c2c2c2;
+  box-shadow: 1px 1px 4px #ebebeb;
+  -webkit-box-shadow: 1px 1px 4px #EBEBEB;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  padding: 7px;
+  outline: none;
+}
+body .form-class .input-field:focus, body .form-class .textarea-field:focus, body .form-class .select-field:focus {
+  border: 1px solid rgb(244, 67, 244);
+}
+body .form-class .textarea-field {
+  height: 100px;
+  width: 55%;
+}
+body .form-class input[type=submit]:hover, body .form-class input[type=button]:hover {
+  background-color: rgb(212, 148, 65);
+  color: #fff;
+}
+body .section-about {
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 150px;
+}
+body .section-about .image-gustav {
+  float: left;
   width: 200px;
   height: 200px;
   border-radius: 10px;
   object-fit: cover;
+  margin-right: 10px;
 }
-
-footer {
-  background-color: rgb(32, 29, 29);
+body .ceo-text {
+  display: inline;
+}
+body .image-team {
+  margin-left: 200px;
+  margin-top: 50px;
+  width: 800px;
+  height: auto;
+  border-radius: 10px;
+}
+body .image-team .p-team {
+  margin-left: 200px;
+}
+body .section-about-2 {
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 /*# sourceMappingURL=styles.css.map */

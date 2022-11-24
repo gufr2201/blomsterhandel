@@ -18,15 +18,31 @@ body {
     min-width: 100vw;
     padding: 0;
     margin: 0;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+
+
     
 
-
+    .main-class {
+        width: 100vw;
+    }
     h1 {
         text-align: center;
         font-size: xxx-large;
         color: $h1-color;
         font-family: 'Rubik Bubbles', cursive;
 
+            .headers {
+                @include panel();
+                width: fit-content;
+                margin-left: 0px;
+                 border-radius:6px;
+            }
+        }
+        h2 {
+            color: $h1-color;
+            font-family: 'Rubik Bubbles', cursive;
         }
         .sidenav {
             height: 100%;
@@ -64,7 +80,7 @@ main {
     margin-left: 150px;
     }
 
-    // Start
+    // Startsidan. Denna första del gäller h1 och hero-bilden på hemsidan.
     .jumbotron {
         display: flex;
         flex-wrap: wrap;
@@ -76,8 +92,9 @@ main {
     @include panel();
     width: fit-content;
     margin-left: 150px;
-    // background-color:$body-color;
     border-radius:6px;
+    width: 100vw;
+
 
 &-title {
     font-size:1.2rem;
@@ -107,8 +124,11 @@ main {
         gap:10px;
         flex-direction:row;
         margin-top:40px;
+        margin-left: 150px;
+
     }
 
+    // Card elementen.
     @mixin card {
         border:2px solid rgba(0,0,0,0);
         display:flex;
@@ -139,7 +159,6 @@ main {
         margin-left: -30px;
         
     } 
-    // Card elements.
 .card {
     @include card();
     width: fit-content;
@@ -168,6 +187,7 @@ main {
 
     &-list {
         list-style: none;
+        margin-left: -8px;
 
     &-text {
     margin-left:-20px;
@@ -189,13 +209,22 @@ main {
     border-radius:6px;
     padding:4px;
 
+    
+    
     &:hover {
         cursor: pointer;
+        background-color: $default-color;
+        color: #fff;
+    }
+    &:active {
+        background-color: #fff;
+        color: #000;
     }
 }
 
+
 &-btn-info {
-    background-color:$primary-color;
+    background-color:$h1-color;
     color:white;
     margin-top:6px;
     margin-bottom:8px;
@@ -206,13 +235,18 @@ main {
 
     &:hover {
         cursor: pointer;
+        background-color: $default-color;
+        color: #fff;
     }
+    &:active  {
+        background-color: #fff;
+        color: #000;
 }
-
+}
 &-tag {
     width:60%;
     transform:translate(0,-6px);
-    height:20px;
+    height:18px;
     display: flex;
     align-items: center;
     margin-left: -14px;
@@ -238,6 +272,9 @@ main {
      & .bg-pink {
       background-color: $pink-color;
      }
+     & .bg-warning {
+        background-color: $warning-color;
+     }
 }
 
 &-tag-text {
@@ -247,11 +284,19 @@ main {
     text-align:center;
     margin-left:1.2rem;
     width:60%;
-    border-style: solid;
-    border-color: black;
+    border: #000 solid 2px;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $default-color;
+        color: #fff;
+    }
+    &:active  {
+        background-color: #fff;
+        color: #000;
 
 }
-
+}
 &-bg-danger
 {
     background-color:$primary-color;
@@ -268,10 +313,10 @@ main {
 }
 
 }
+    // Avslut på card-elementen
 
-    // Avslut
 .container {
-    max-width: $grid__bp-md * 1px;
+    max-width: $grid__bp-md * 1.5px;
     margin: 0 auto;
     padding: 10px;
     box-sizing: border-box;
@@ -300,15 +345,146 @@ main {
             }
         }
 }
-.photo {
-    width: $photo-width;
-    height: $photo-height;
-    border-radius: $photo-width/20;
-    object-fit: cover;
 
 
+// Produktsida med olika suckulenter (detaljsidan)
+    .product-page {
+        width: 100vw;
+
+
+    .succulent-section {
+        padding-left: 5rem;
+
+    }
+    small {
+        padding-left: 15px;
+    }
+     strong {
+        width: 10%;
+     }
+    .succulent-image {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        padding-left: 5rem;
+        transition: .2s;
+
+        &:hover {
+            transform:scale(1.1);
+            cursor:help;
+        }
+        
+    }
+
 }
+//Form-sidan där man kan sälja sina växter.
+
+    .form-section {
+        margin-left: $margin;
+        .paragraph-form {
+            margin-left: 20px;
+        }
+    }
+    .form-class {
+        max-width: 650px;
+        padding: 20px 12px 10px 20px;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+
+        .form-class-heading{
+            font-size: 22px;
+            font-weight: bold;
+            font-style: italic;
+            border-bottom: 2px solid #000;
+            margin-bottom: 20px;
+            padding-bottom: 3px;
+        }
+        label {
+            display: block;
+            margin: 0px 0px 15px 0px;
+
+            span {
+                width: 160px;
+                font-weight: bold;
+                float: left;
+                padding-top: 8px;
+                padding-right: 5px;               
+            }
+        }
+        input.input-field, .select-field {
+            width: 48%;
+        }
+        input.input-field, .textarea-field, .select-field {
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            border: 1px solid #c2c2c2;
+            box-shadow: 1px 1px 4px #ebebeb;
+            -webkit-box-shadow: 1px 1px 4px #EBEBEB;
+            border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            padding: 7px;
+            outline: none;
+        }
+        .input-field:focus, .textarea-field:focus, .select-field:focus {
+            border: 1px solid rgb(244, 67, 244);
+        }
+
+        .textarea-field {
+            height: 100px;
+            width: 55%;
+        }
+        input[type=submit]:hover, input[type=button]:hover {
+            background-color: $h1-color;
+            color: #fff;
+        }
+
+    }
+
+    //Om oss-sidan
+    .section-about {
+        margin-left: $margin;
+        margin-right: $margin;
+        margin-bottom: 150px;
+
+        .image-gustav {
+        float: left;
+        width: $photo-width;
+        height: $photo-height;
+        border-radius: $photo-width/20;
+        object-fit: cover;
+        margin-right: 10px;
+        }
+      
+        }
+        .ceo-text {
+            display: inline;
+            }
+            
+
+    .image-team {
+        margin-left: $margin;
+        margin-top: 50px;
+        width: 800px;
+        height: auto;
+        border-radius: $photo-width/20;
+        .p-team {
+        margin-left: $margin;
+
+        }
+    }
+    .section-about-2 {
+        margin-left: $margin;
+        margin-right: $margin;
+    }
 }
-footer {
-    background-color: rgb(32, 29, 29);
-}
+
+// footer {
+//     position: absolute;
+//     bottom: 0;
+//     width: 100%;
+//     height: 2.5rem;
+//     background-color: rgb(32, 29, 29);
+   
+// }

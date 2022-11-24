@@ -19,6 +19,36 @@
             <a href="alla-produkter.html" title="Här kan du se alla våra produkter">Alla produkter</a>
     </nav>
     </header>
-    <h1>Här kan du sälja dina växter</h1>
+    <main class="main-class">
+        <section class="form-section">
+        <h1>Här kan du sälja dina växter</h1>
+        <p class="paragraph-form">Fyll i uppgifterna nedan för att sälja dina växter via oss. Önska upphämtningsdatum så återkommer vi.</p>
+    <!-- <form action="form.html" method="post">
+        <label for="name">Namn:</label>
+        <input type="text"><br>  
+        <label for="date">Upphämtningsdatum:</label>
+        <input type="text">
+    </form>    -->
+    
+    <div class="form-class">
+        <div class="form-class-heading">Fyll i formuläret nedan och tryck på skicka</div>
+        <form action="" method="post">
+        <label for="field1"><span>Namn: </span><input type="text" class="input-field" name="field1" value="" /></label>
+        <label for="field2"><span>Datum: </span><input type="date" class="input-field" name="field2" value="" /></label>
+        <label for="field3"><span>Namn på de växter du vill sälja: </span><textarea name="field3" class="textarea-field"></textarea></label>
+        <label for="field4"><span>Beskriv skicket på dina växter: </span><textarea name="field4" class="textarea-field"></textarea></label>
+        <label for="field5"><span>Ladda upp bilder på växterna</span><input type="file" class="myFile" name="filename"><input type="file" class="myFile" name="filename">
+            <input type="file" class="myFile" name="filename"><input type="file" class="myFile" name="filename"></label>
+        <label for="field6"><span>Välj vilken kategori dina växter tillhör: </span><select name="field6" class="select-field">
+        <option value="green-plants">Gröna växter</option>
+        <option value="succulents">Suckulenter</option>
+        <option value="bouquet">Snittblommor</option>
+        <option value="trees">Träd</option>    
+          <label><span> </span><input type="submit" value="Submit" /></label>
+        </form>
+        </div>
+    </section>
+
+    </main>
 </body>
 </html>

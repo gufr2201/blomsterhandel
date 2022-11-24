@@ -10,6 +10,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap" rel="stylesheet">
+<script
+src="https://code.jquery.com/jquery-3.6.1.min.js"
+integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+crossorigin="anonymous"
+></script>
 </head>
 
 <body>
@@ -18,7 +23,6 @@
         <a href="about.html" title="Läs mer om Gustavs Blomsterhandel">Om oss</a>
         <a href="alla-produkter.html" title="Här kan du se alla våra produkter">Alla produkter</a>
         <a href="form.html" title="Här kan du sälja dina växter">Sälj dina växter</a>
-        <a href="test.html">test</a>
     </nav>
 </header>
 
@@ -35,90 +39,100 @@
         <div class="card-image">
           <img src="./images/mathias-reding-WPZlpwJx0Lk-unsplash.jpg" alt="Photo by Mathias Reding on Unsplash">
         </div>
-       <h4 class="card-title">Kaktusar - Cactaceae</h4> <!--Namn-->
+       <h4 class="card-title">Kaktusar</h4> <!--Namn-->
        <ul class="card-list">
         <li class="card-text">Stickig men fin växt</li><!--Kort beskrivning-->
-        <li class="card-text">100sek</li>
-        <li><button class="card-btn-info">Mer information</button></li><!--Mer info-->
+        <li class="card-text"><strong>100 sek</strong></li>
+        <li><button class="card-btn-info card-btn-info1">Mer information</button>
+        <p id="plant-info1" style="display: none;">Kaktusväxter (Cactaceae) är en suckulent växtfamilj med vanligtvis taggiga 
+          fröväxter som mer formellt även benämns kaktusar eller kaktéer. Det finns 
+          mellan 1 500 och 2 000 olika arter av kaktusväxter, även om det direkta antalet 
+          varierar beroende på vem som tillfrågas. Vissa fältstudier av dessa växter är mycket svåra, 
+          vilket beror på att de är svårtillgängliga samt växer i ogästvänlig terräng.</p></li>
+        <!-- <li><button class="toggle1">Dölj information</button></li> -->
+
         <li><button class="card-btn">Köp</button></li><!--Länk-->
-        <li><span class="card-tag"><p class="card-tag-text bg-primary">Suckulent</p></span></li><!--Kategori-->
+        <li><span class="card-tag"><a href="produkt.html" title="Se fler suckulenter" class="card-tag-text bg-primary">Suckulent</a></span></li><!--Kategori-->
         </ul>
     </div>
     <div class="card card">
         <div class="card-image">
           <img src="./images/lukasz-rawa-hkSInYvOLtQ-unsplash.jpg" alt="Photo by Łukasz Rawa on Unsplash">
         </div>
-       <h4 class="card-title">Tulpaner - Tulipa</h4> <!--Namn-->
-       <!-- <ul class="card-text"> -->
-        <p class="card-text">En bukett med 6 rosa tulpaner</p><!--Kort beskrivning-->
-        <small class="card-price">100sek</small>
-        <button class="card-btn-info">Mer information</button><!--Mer info-->
-        <button class="card-btn">Köp</button><!--Länk-->
-        <span class="card-tag"><p class="card-tag-text bg-pink">Snittblommor</p></span><!--Kategori-->
+       <h4 class="card-title">Tulpaner</h4>
+       <ul class="card-list">
+        <li class="card-text">En bukett med 6 rosa tulpaner</li>
+        <li class="card-text"><strong>150 sek</strong></li>
+        <li><button class="card-btn-info card-btn-info2">Mer information</button>
+        <p id="plant-info2" style="display: none;">Tulpansläktet eller tulpaner (Tulipa) är ett släkte som ingår i familjen liljeväxter.
+           De är lökväxter med breda blad. Blommorna sitter enstaka eller några få på samma stjälk. Som alla 
+           liljeväxter har de sextaliga blommor. Kalkbladen är sex stycken stora (tre yttre och tre inre) och sex 
+           ståndare samt en tretalig synkarp pistill.</p></li>
+        <li><button class="card-btn">Köp</button></li>
+        <li><span class="card-tag"><a href="produkt.html" title="Se fler snittblommor" class="card-tag-text bg-pink">Snittblommor</a></span></li><!--Kategori-->
     </div>
     <div class="card card">
       <div class="card-image">
         <img src="./images/bence-balla-schottner-ehGgVnHc-1Q-unsplash.jpg" alt="Photo by Bence Balla-Schottner on Unsplash">
       </div>
-       <h4 class="card-title">En bukett rosor</h4> <!--Namn-->
-       <ul class="card-text">
-        <li class="li card-text">Rosa</li><!--Släkte-->
-        <li class="li card-text">14 röda rosor</li><!--Kort beskrivning-->
-        <li class="li card-btn-info">Mer information</li><!--Mer info-->
-        <li class="li"><button class="card-btn">Köp</button></li><!--Länk-->
-        <li class="li card-tag"><p class="card-tag-text bg-pink">Snittblommor</p></li><!--Kategori-->
+       <h4 class="card-title">En bukett rosor</h4> 
+        <ul class="card-list">
+        <li class="card-text">En bukett med 14 röda rosor</li>
+        <li class="card-text"><strong>200 sek</strong></li>
+        <li><button class="card-btn-info">Mer information</button></li>
+        <li><button class="card-btn">Köp</button></li>
+        <li><span class="card-tag"><a href="produkt.html" title="Se fler snittblommor" class="card-tag-text bg-pink">Snittblommor</a></span></li><!--Kategori-->
         </ul>
 </div>
-  </section>
-<div>
-<ul class="list monstera">
-    <img class="photo monstera-photo" src="./images/feey-bwsTJMnhcwE-unsplash.jpg" alt="Photo by feey on Unsplash">
-    <li>Monstera</li> <!--Namn-->
-    <li>Monstera deliciosa</li><!--Släkte-->
-    <li>Växt som har hål i blandem</li><!--Kort beskrivning-->
-    <li class="category3"><button>Gröna växter</button></li><!--Kategori-->
-    <li class="more-info">Mer information</li><!--Mer info-->
-    <li><button>Köp</button></li><!--Länk-->
-</ul>
-</div>
-<div>
-  <ul class="">
-    <img class="photo succulent-photo" src="./images/stephanie-harvey-T0inbt7nRME-unsplash.jpg" alt="Photo by Stephanie Harvey on Unsplash">
-    <li>Aloe Vera</li> <!--Namn-->
-    <li>Succulent</li><!--Släkte-->
-    <li>Vackra blad i skiftande färger</li><!--Kort beskrivning-->
-    <li class="category">Suckulent</li><!--Kategori-->
-    <li></li><!--Mer info-->
-    <li><button>Köp</button></li><!--Länk-->
+<div class="card card">
+  <div class="card-image">
+    <img src="./images/feey-bwsTJMnhcwE-unsplash.jpg" alt="Photo by feey on Unsplash">
+  </div>
+ <h4 class="card-title">Monstera</h4> <!--Namn-->
+ <ul class="card-list">
+  <li class="card-text">Växt som har hål i blanden</li><!--Kort beskrivning-->
+  <li class="card-text"><strong>250 sek</strong></li>
+  <li><button class="card-btn-info">Mer information</button></li><!--Mer info-->
+  <li><button class="card-btn">Köp</button></li><!--Länk-->
+  <li><span class="card-tag"><a href="produkt.html" title="Se fler gröna växter" class="card-tag-text bg-success">Gröna växter</a></span></li><!--Kategori-->
   </ul>
 </div>
-<div>
-   <ul class="">
-    <img class="photo " src="./images/feey-17UXXzGF7RA-unsplash.jpg" alt="Photo by feey on Unsplash">
-    <li>Fikus</li> <!--Namn-->
-    <li>Ficus</li><!--Släkte-->
-    <li></li><!--Kort beskrivning-->
-    <li class="category"></li><!--Kategori-->
-    <li></li><!--Mer info-->
-    <li><button>Köp</button></li><!--Länk-->
+<div class="card card">
+  <div class="card-image">
+    <img src="./images/stephanie-harvey-T0inbt7nRME-unsplash.jpg" alt="Photo by Stephanie Harvey on Unsplash">
+  </div>
+ <h4 class="card-title">Aloe Vera</h4> <!--Namn-->
+ <ul class="card-list">
+  <li class="card-text">Lätt att ta hand om med <br> tjockare gröna blad</li><!--Kort beskrivning-->
+  <li class="card-text"><strong>120 sek</strong></li>
+  <li><button class="card-btn-info">Mer information</button></li><!--Mer info-->
+  <li><button class="card-btn">Köp</button></li><!--Länk-->
+  <li><span class="card-tag"><a href="produkt.html" title="Se fler suckulenter" class="card-tag-text bg-primary">Suckulent</a></span></li><!--Kategori-->
   </ul>
 </div>
-<div>
-    <ul class="">
-      <img class="photo " src="" alt="">
-        <li></li> <!--Namn-->
-         <li></li><!--Släkte-->
-        <li></li><!--Kort beskrivning-->
-    <li class="category"></li><!--Kategori-->
-            <li></li><!--Mer info-->
-        <li><button>Köp</button></li><!--Länk-->
-        </ul>
-    </div>
- </div>
+<div class="card card">
+  <div class="card-image">
+    <img src="./images/feey-17UXXzGF7RA-unsplash.jpg" alt="Photo by feey on Unsplash">
+  </div>
+ <h4 class="card-title">Fikus</h4> <!--Namn-->
+  <ul class="card-list">
+    <li class="card-text">Vackra blad med variation i färg</li><!--Kort beskrivning-->
+    <li class="card-text"><strong>250 sek</strong></li>
+    <li><button class="card-btn-info">Mer information</button></li><!--Mer info-->
+    <li><button class="card-btn">Köp</button></li><!--Länk-->
+    <li><span class="card-tag"><a href="produkt.html" title="Se fler gröna växter" class="card-tag-text bg-success">Gröna växter</a></span></li><!--Kategori-->
+   </ul>
+  </div>
+</section>
+
+</div>
+
 </main>
-    <footer>
-        <p></p>
-    </footer>
+
+<!-- <footer>
+  <p>Adress</p>
+</footer> -->
 </body>
+<script src="main.js"></script>
 
 </html>
