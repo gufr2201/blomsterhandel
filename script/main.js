@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    
+    //denna kod Gör att man på förstasidan kan trycka på mer information om varorna för att få mer information och sedan trycka på dölj information för att dölja informationen
 
     $(".card-btn-info1").click(function() {
         const displayState = $("id").css("display")

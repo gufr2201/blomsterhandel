@@ -56,10 +56,9 @@ body {
             padding-top: 20px;
 
             a {
-                // margin-top: 20px;
                 padding: 6px 6px 6px 6px;
                 text-decoration: none;
-                font-size: large;
+                font-size:x-large;
                 color: azure;
                 display: block;
 
@@ -350,6 +349,8 @@ main {
 // Produktsida med olika suckulenter (detaljsidan)
     .product-page {
         width: 100vw;
+        margin-left: $margin;
+       
 
 
     .succulent-section {
@@ -367,7 +368,8 @@ main {
         width: 300px;
         height: 300px;
         object-fit: cover;
-        padding-left: 5rem;
+        margin-left: 2.5rem;
+        padding-left: 2rem;
         transition: .2s;
 
         &:hover {

@@ -1,91 +1,15 @@
-# skriv in nedan
-sass --watch styles.scss styles.css
-
-# blomsterhandel
-
-# Att göra
-
-GÖr :hover över knappar och lägg :active innan så att knapp lyser upp innan man trycker.
-Testa att göra knapparna scheumorphic.
-
-# KOlla upp hur man gör grid med scss
-# object-fit: cover; gör detta på bilder för att allt ska passa.
-# Lägg in box-shadow på bilderna
-
-Använd nedan kod i css för att visa breadcrumbs 
-
-breadcrumb > li {
-  display: inline;
-}
-
-.breadcrumb li+li::before {
-	padding: 10px;
- content: ">";
-}
-
-.breadcrumb a {
- text-decoration: none;
-}
-
-.breadcrumb a:hover {
- color: red;
-}
-
-# Kan köra nedan för breadcrumb också
-.breadcrumb {
-  text-align: left;
-}
-.breadcrumb li {
-  float: left;
-}
-
-.breadcrumb a {
-  color: #fff;
-  background: darkcyan;
-  text-decoration: none;
-  position: relative; 
-  height: 30px;
-  line-height: 30px;
-  text-align: center;
-  margin-right: 15px;
-  padding: 0 5px;
-}
-.breadcrumb a::before,
-.breadcrumb a::after {
-  content:"";
-  position: absolute;
-  border-color: darkcyan;
-  border-style: solid;
-  border-width: 15px 5px;
-}  
-.breadcrumb a::before {
-  left: -10px;
-  border-left-color: transparent;
-}
-
-.breadcrumb a::after {
-  left: 100%;
-  border-color: transparent;
-  border-left-color: darkcyan;
-}
-.breadcrumb a:hover {
-  background-color: blue;
-} 
-.breadcrumb a:hover::before {
-  border-color: blue;
-  border-left-color: transparent;
-}
-.breadcrumb a:hover::after {
-border-left-color: blue;
-}
+#Index-sidan
+På förstasidan har jag lag in sex produkter med en lista som innehåller kort information om produkten, en knapp för att få mer information som kan vecklas ut och in, en köp-knapp och en kategoriknaopp som också leder till en detaljsida för den kategorin. Alla kategori-länkar löeder till samma detaljsida. När man hovrar med musen över en specifik produkt ramas den in och pruduktnamnet byter färg.
 
 
-# Skapa user stories och tasks
+#Sida för alla produkter
+Denna sida visar upp samma produkter som förstasidan men det har lagts till fyra ytterligare produkter. Dessa fyra produkter har ingen mer information som visas om man trycker på knapper mer information. 
 
-# User stories
-En hemsida som säljer blommor och växter
--Skapa Hero-bild
--skapa nav-meny för de olika sidorna och gör så att de 
-ändras när man hover över dem.
-- lägga upp de olika produkterna och fixa listorna under med info som vecklas ut
-- 
+#Detaljsidan
+Detaljsidan visar mer information som kategorin suckulenter. När man hovrar med musen över bilderna förstoras dem. Det finns även en rullgardinsvy som man kan trycka på för att läsa mer information om suckulenter.
+
+#Formulär-sidan Sälj dina växter
+Här finns kort information om att man kan sälja sina växter genom att fylla i ett formulär. Det går inte att skicka iväg det ifyllda formuläret.
+
+#Om oss
+Här står infomration  om blomsterhandeln med kontaktinformation och ett formulär för att skicka ett meddelande till företaget. När man trycker på skicka kommer ett meddelande upp på skärmen och formuläret försvinner när man trycker på skicka. 
