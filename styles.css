@@ -283,6 +283,7 @@ body .product-page .succulent-section {
 }
 body .product-page small {
   padding-left: 15px;
+  margin-bottom: 10px;
 }
 body .product-page strong {
   width: 10%;
@@ -297,6 +298,25 @@ body .product-page .succulent-image {
 body .product-page .succulent-image:hover {
   transform: scale(1.1);
   cursor: help;
+}
+body .product-page .info-container {
+  width: 50%;
+  border: 1px solid #000;
+  margin-bottom: 50px;
+}
+body .product-page .info-container div {
+  width: 100%;
+  background-color: #fff;
+}
+body .product-page .info-container .info-header {
+  background-color: #d3d3d3;
+  padding: 2px;
+  cursor: pointer;
+  font-weight: bold;
+}
+body .product-page .info-container .info-content {
+  display: none;
+  padding: 5px;
 }
 body .form-section {
   margin-left: 200px;

@@ -10,14 +10,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap" rel="stylesheet">
-    
+    <script
+src="https://code.jquery.com/jquery-3.6.1.min.js"
+integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+crossorigin="anonymous"
+></script>
 </head>
 <body>
    <header>
     <nav class="sidenav">
         <a href="index.html" title="Gå tillbaka till huvudmenyn">Hem</a>
-        <a href="about.html" title="Läs mer om Gustavs Blomsterhandel">Om oss</a>
         <a href="form.html" title="Här kan du sälja dina växter">Sälj dina växter</a>
+        <a href="about.html" title="Läs mer om Gustavs Blomsterhandel">Om oss</a>
     </nav>
 </header>
 
@@ -26,85 +30,115 @@
     <main class="main-class">
         <h1 class="headers">Våra produkter</h1>
         <div class="container">
-            <section class="flowers">
-              <div class="card card">
-                  <div class="card-image">
-                    <img src="./images/mathias-reding-WPZlpwJx0Lk-unsplash.jpg" alt="Photo by Mathias Reding on Unsplash">
-                  </div>
-                 <h4 class="card-title">Kaktusar</h4> <!--Namn-->
-                 <ul class="card-list">
-                  <li class="card-text">Stickig men fin växt</li><!--Kort beskrivning-->
-                  <li class="card-text"><strong>100 sek</strong></li>
-                  <li><button class="card-btn-info">Mer information</button></li><!--Mer info-->
-                  <li><button class="card-btn">Köp</button></li>
-                  <li><span class="card-tag"><a href="produkt.html" title="Se fler suckulenter" class="card-tag-text bg-primary">Suckulent</a></span></li><!--Kategori-->
-                  </ul>
-              </div>
-              <div class="card card">
-                  <div class="card-image">
-                    <img src="./images/lukasz-rawa-hkSInYvOLtQ-unsplash.jpg" alt="Photo by Łukasz Rawa on Unsplash">
-                  </div>
-                 <h4 class="card-title">Tulpaner</h4> <!--Namn-->
-                 <ul class="card-list">
-                  <li class="card-text">En bukett med 6 rosa tulpaner</li><!--Kort beskrivning-->
-                  <li class="card-text"><strong>150 sek</strong></li>
-                  <li><button class="card-btn-info">Mer information</button></li><!--Mer info-->
-                  <li><button class="card-btn">Köp</button></li><!--Länk-->
-                  <li><span class="card-tag"><a href="produkt.html" title="Se fler snittblommor" class="card-tag-text bg-pink">Snittblommor</a></span></li><!--Kategori-->
-              </div>
-              <div class="card card">
+          <section class="flowers">
+            <div class="card card">
                 <div class="card-image">
-                  <img src="./images/bence-balla-schottner-ehGgVnHc-1Q-unsplash.jpg" alt="Photo by Bence Balla-Schottner on Unsplash">
+                  <img src="./images/mathias-reding-WPZlpwJx0Lk-unsplash.jpg" alt="Photo by Mathias Reding on Unsplash">
                 </div>
-                 <h4 class="card-title">En bukett rosor</h4> <!--Namn-->
-                 <ul class="card-list">
-                  <!-- <li class="li card-text">Rosa</li>Släkte -->
-                  <li class="card-text">En bukett med 14 röda rosor</li><!--Kort beskrivning-->
-                  <li class="card-text"><strong>200 sek</strong></li>
-                  <li><button class="card-btn-info">Mer information</button></li><!--Mer info-->
-                  <li><button class="card-btn">Köp</button></li><!--Länk-->
-                  <li><span class="card-tag"><a href="produkt.html" title="Se fler snittblommor" class="card-tag-text bg-pink">Snittblommor</a></span></li><!--Kategori-->
-                  </ul>
-          </div>
-          <div class="card card">
-            <div class="card-image">
-              <img src="./images/feey-bwsTJMnhcwE-unsplash.jpg" alt="Photo by feey on Unsplash">
+               <h4 class="card-title">Kaktusar</h4> 
+               <ul class="card-list">
+                <li class="card-text">Stickig men fin växt</li>
+                <li class="card-text"><strong>100 sek</strong></li>
+                <li><button class="card-btn-info card-btn-info1">Mer information</button>
+                <p id="plant-info1" style="display: none;">Kaktusväxter (Cactaceae) är en suckulent växtfamilj med vanligtvis taggiga 
+                  fröväxter som mer formellt även benämns kaktusar eller kaktéer. Det finns 
+                  mellan 1 500 och 2 000 olika arter av kaktusväxter, även om det direkta antalet 
+                  varierar beroende på vem som tillfrågas. Vissa fältstudier av dessa växter är mycket svåra, 
+                  vilket beror på att de är svårtillgängliga samt växer i ogästvänlig terräng.</p></li>
+                      <li><button class="card-btn">Köp</button></li>
+                <li><span class="card-tag"><a href="produkt.html" title="Se fler suckulenter" class="card-tag-text bg-primary">Suckulent</a></span></li><!--Kategori-->
+                </ul>
             </div>
-           <h4 class="card-title">Monstera</h4> <!--Namn-->
-           <ul class="card-list">
-            <li class="card-text">Växt som har hål i blanden</li><!--Kort beskrivning-->
+            <div class="card card">
+                <div class="card-image">
+                  <img src="./images/lukasz-rawa-hkSInYvOLtQ-unsplash.jpg" alt="Photo by Łukasz Rawa on Unsplash">
+                </div>
+               <h4 class="card-title">Tulpaner</h4>
+               <ul class="card-list">
+                <li class="card-text">En bukett med 6 rosa tulpaner</li>
+                <li class="card-text"><strong>150 sek</strong></li>
+                <li><button class="card-btn-info card-btn-info2">Mer information</button>
+                <p id="plant-info2" style="display: none;">Tulpansläktet eller tulpaner (Tulipa) är ett släkte som ingår i familjen liljeväxter.
+                   De är lökväxter med breda blad. Blommorna sitter enstaka eller några få på samma stjälk. Som alla 
+                   liljeväxter har de sextaliga blommor. Kalkbladen är sex stycken stora (tre yttre och tre inre) och sex 
+                   ståndare samt en tretalig synkarp pistill.</p></li>
+                <li><button class="card-btn">Köp</button></li>
+                <li><span class="card-tag"><a href="produkt.html" title="Se fler snittblommor" class="card-tag-text bg-pink">Snittblommor</a></span></li><!--Kategori-->
+            </div>
+            <div class="card card">
+              <div class="card-image">
+                <img src="./images/bence-balla-schottner-ehGgVnHc-1Q-unsplash.jpg" alt="Photo by Bence Balla-Schottner on Unsplash">
+              </div>
+               <h4 class="card-title">En bukett rosor</h4> 
+                <ul class="card-list">
+                <li class="card-text">En bukett med 14 röda rosor</li>
+                <li class="card-text"><strong>200 sek</strong></li>
+                <li><button class="card-btn-info card-btn-info3">Mer information</button>
+               <p id="plant-info3" style="display: none;">Rosor är buskar som kan vara upprätta eller klättrande. 
+                  De har vanligen taggar eller borst och bara i undantagsfall är grenarna släta. Bladen är strödda, 
+                  vanligen parbladiga eller i sällsynta fall enkelbladiga, och vanligen med stipler. 
+                  De flesta arter är lövfällande. Blommorna är tvåkönade och sitter ensamma eller flockar, 
+                  sällan i sammansatta klasar, högblad ett till flera, eller saknas.</p> </li>
+            <li><button class="card-btn">Köp</button></li>
+        
+                <li><span class="card-tag"><a href="produkt.html" title="Se fler snittblommor" class="card-tag-text bg-pink">Snittblommor</a></span></li><!--Kategori-->
+                </ul>
+        </div>
+        <div class="card card">
+          <div class="card-image">
+            <img src="./images/feey-bwsTJMnhcwE-unsplash.jpg" alt="Photo by feey on Unsplash">
+          </div>
+         <h4 class="card-title">Monstera</h4> 
+         <ul class="card-list">
+          <li class="card-text">Växt som har hål i blanden</li>
+          <li class="card-text"><strong>250 sek</strong></li>
+          <li><button class="card-btn-info card-btn-info4">Mer information</button>
+            <p id="plant-info4" style="display: none;">Monstera deliciosa är en växt i 
+              monsterasläktet inom familjen kallaväxter och är hemmahörande i Syd- och 
+              Mellanamerikas tropiska områden. Växten är en epifyt som klättrar på andra träd för att 
+              ta sig upp till solljuset och kan bli uppemot 10 meter hög. Den kännetecknas av 
+              ganska säregna och stora flikiga blad, uppemot en halvmeter i diameter. </p></li>
+          <li><button class="card-btn">Köp</button></li>
+          <li><span class="card-tag"><a href="produkt.html" title="Se fler gröna växter" class="card-tag-text bg-success">Gröna växter</a></span></li><!--Kategori-->
+          </ul>
+        </div>
+        <div class="card card">
+          <div class="card-image">
+            <img src="./images/stephanie-harvey-T0inbt7nRME-unsplash.jpg" alt="Photo by Stephanie Harvey on Unsplash">
+          </div>
+         <h4 class="card-title">Aloe Vera</h4> 
+         <ul class="card-list">
+          <li class="card-text">Lätt att ta hand om med <br> tjockare gröna blad</li>
+          <li class="card-text"><strong>120 sek</strong></li>
+          <li><button class="card-btn-info card-btn-info5">Mer information</button>
+            <p id="plant-info5" style="display: none;">Äkta aloe (Aloe vera) är en art i familjen afodillväxter. 
+            Arten är möjligen ursprunglig på Arabiska halvön, andra källor anger Kanarieöarna. 
+            Numera förekommer arten odlad och naturaliserad på många håll, till exempel i Västindien, 
+            Mexiko och södra Nordamerika. Äkta aloe odlas ibland som krukväxt i Sverige. 
+            Den växer endast i subtropiskt klimat.</p></li>
+          <li><button class="card-btn">Köp</button></li>
+          <li><span class="card-tag"><a href="produkt.html" title="Se fler suckulenter" class="card-tag-text bg-primary">Suckulent</a></span></li><!--Kategori-->
+          </ul>
+        </div>
+        <div class="card card">
+          <div class="card-image">
+            <img src="./images/feey-17UXXzGF7RA-unsplash.jpg" alt="Photo by feey on Unsplash">
+          </div>
+         <h4 class="card-title">Fikus</h4> 
+          <ul class="card-list">
+            <li class="card-text">Vackra blad med variation i färg</li>
             <li class="card-text"><strong>250 sek</strong></li>
-            <li><button class="card-btn-info">Mer information</button></li><!--Mer info-->
-            <li><button class="card-btn">Köp</button></li><!--Länk-->
+            <li><button class="card-btn-info card-btn-info6">Mer information</button>
+              <p id="plant-info6" style="display: none;">Fikussläktet (Ficus) är 
+                ett växtsläkte i familjen mullbärsväxter och omfattar omkring 1000 
+                arter träd, buskar, lianer och marktäckande växter i tropiska och 
+                subtropiska områden över hela jorden. Flera arter är epifyter, 
+                det vill säga lever på annan växtlighet. En del fikon, strypfikon, 
+                slingrar sig runt värdväxten och dödar den.</p></li>
+            <li><button class="card-btn">Köp</button></li>
             <li><span class="card-tag"><a href="produkt.html" title="Se fler gröna växter" class="card-tag-text bg-success">Gröna växter</a></span></li><!--Kategori-->
-            </ul>
+           </ul>
           </div>
-          <div class="card card">
-            <div class="card-image">
-              <img src="./images/stephanie-harvey-T0inbt7nRME-unsplash.jpg" alt="Photo by Stephanie Harvey on Unsplash">
-            </div>
-           <h4 class="card-title">Aloe Vera</h4> <!--Namn-->
-           <ul class="card-list">
-            <li class="card-text">Lätt att ta hand om med <br>tjockare gröna blad</li><!--Kort beskrivning-->
-            <li class="card-text"><strong>120 sek</strong></li>
-            <li><button class="card-btn-info">Mer information</button></li><!--Mer info-->
-            <li><button class="card-btn">Köp</button></li><!--Länk-->
-            <li><span class="card-tag"><a href="produkt.html" title="Se fler suckulenter" class="card-tag-text bg-primary">Suckulent</a></span></li><!--Kategori och länk-->
-            </ul>
-          </div>
-          <div class="card card">
-            <div class="card-image">
-              <img src="./images/feey-17UXXzGF7RA-unsplash.jpg" alt="Photo by feey on Unsplash">
-            </div>
-           <h4 class="card-title">Fikus</h4> <!--Namn-->
-            <ul class="card-list">
-              <li class="card-text">Vackra blad med variation i färg</li><!--Kort beskrivning-->
-              <li class="card-text"><strong>250 sek</strong></li>
-              <li><button class="card-btn-info">Mer information</button></li><!--Mer info-->
-              <li><button class="card-btn">Köp</button></li><!--Länk-->
-              <li><span class="card-tag"><a href="produkt.html" title="Se fler gröna växter" class="card-tag-text bg-success">Gröna växter</a></span></li><!--Kategori och länk-->
-             </ul>
-            </div>
             <div class="card card">
                 <div class="card-image">
                   <img src="./images/mor-shani-KB4UQabfnUg-unsplash.jpg" alt="Photo by Mor Shani on Unsplash">
@@ -164,6 +198,6 @@
           
         </div>
     </main>
-    <footer></footer>
 </body>
+<script src="./script/main.js"></script>
 </html>

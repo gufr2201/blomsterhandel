@@ -358,6 +358,7 @@ main {
     }
     small {
         padding-left: 15px;
+        margin-bottom: 10px;
     }
      strong {
         width: 10%;
@@ -375,7 +376,28 @@ main {
         }
         
     }
+    .info-container {
+        width: 50%;
+        border: 1px solid #000;
+        margin-bottom: 50px;
 
+        div {
+            width: 100%;
+            background-color: #fff;
+        }
+
+        .info-header {
+            background-color: #d3d3d3;
+            padding: 2px;
+            cursor: pointer;
+            font-weight: bold;    
+        }
+
+        .info-content {
+        display: none;
+        padding: 5px;
+    }
+}
 }
 //Form-sidan där man kan sälja sina växter.
 
@@ -479,12 +501,3 @@ main {
         margin-right: $margin;
     }
 }
-
-// footer {
-//     position: absolute;
-//     bottom: 0;
-//     width: 100%;
-//     height: 2.5rem;
-//     background-color: rgb(32, 29, 29);
-   
-// }
