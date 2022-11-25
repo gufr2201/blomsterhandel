@@ -33,7 +33,7 @@ body h2 {
 }
 body .sidenav {
   height: 100%;
-  width: 150px;
+  width: 200px;
   position: fixed;
   z-index: 1;
   top: 0;
